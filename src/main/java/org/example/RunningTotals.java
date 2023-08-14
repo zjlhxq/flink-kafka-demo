@@ -88,7 +88,7 @@ public class RunningTotals {
 
         runningTotals.sinkTo(sink);
 
-        env.execute("Flink Running Totals Demo");
+        env.executeAsync("Flink Running Totals Demo");
 
     }
 }

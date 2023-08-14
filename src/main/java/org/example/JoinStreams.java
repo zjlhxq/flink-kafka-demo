@@ -122,7 +122,7 @@ public class JoinStreams {
 
         purchasesEnrichedTable.sinkTo(sink);
 
-        env.execute("Flink Streaming Join Demo");
+        env.executeAsync("Flink Streaming Join Demo");
 
     }
 }
