@@ -85,9 +85,9 @@ FLINK_CONTAINER=$(docker container ls --filter  name=kafka-flink_jobmanager --fo
 docker cp build/libs/flink-kafka-demo-1.0.0-all.jar ${FLINK_CONTAINER}:/tmp
 docker exec -it ${FLINK_CONTAINER} bash
 
-flink run -c org.example.RunningTotals /tmp/flink-kafka-demo-1.0.0-all.jar
+flink run -c org.example.RunningTotals /tmp/flink-kafka-demo-1.2.0-all.jar
 
-flink run -c org.example.JoinStreams /tmp/flink-kafka-demo-1.0.0-all.jar
+flink run -c org.example.JoinStreams /tmp/flink-kafka-demo-1.2.0-all.jar
 ```
 
 ## Kafka
